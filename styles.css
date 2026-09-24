@@ -1,6 +1,7 @@
 :root {
   color-scheme: dark;
   --green: #78be20;
+  --blue: #344990;
   --black: #000;
   --ink: #1d1d1e;
   --white: #f7f7f2;
@@ -56,7 +57,7 @@ a {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 11377.08 / 31908.74;
+  aspect-ratio: 11377.08 / 36089.16;
   user-select: none;
   -webkit-user-drag: none;
 }
@@ -81,52 +82,59 @@ a {
 }
 
 .hotspot--menu {
-  top: 30.417%;
-  left: 4.426%;
+  top: 26.893%;
+  left: 4.401%;
   width: 91.163%;
-  height: 13.267%;
+  height: 8.798%;
+}
+
+.hotspot--seasonal-menu {
+  top: 36.571%;
+  left: 4.401%;
+  width: 91.163%;
+  height: 8.798%;
 }
 
 .hotspot--loyalty {
-  top: 44.679%;
-  left: 4.426%;
+  top: 46.248%;
+  left: 4.401%;
   width: 91.163%;
-  height: 9.950%;
+  height: 8.798%;
 }
 
 .hotspot--2gis {
-  top: 55.624%;
-  left: 4.426%;
+  top: 55.925%;
+  left: 4.401%;
   width: 44.186%;
-  height: 15.423%;
+  height: 13.636%;
 }
 
 .hotspot--yandex {
-  top: 55.624%;
-  left: 51.403%;
+  top: 55.925%;
+  left: 51.378%;
   width: 44.186%;
-  height: 15.423%;
+  height: 13.636%;
 }
 
 .hotspot--tips {
-  top: 72.042%;
-  left: 4.426%;
+  top: 70.442%;
+  left: 4.408%;
   width: 91.163%;
-  height: 9.950%;
+  height: 13.636%;
 }
 
 .hotspot--telegram {
-  top: 82.987%;
-  left: 4.426%;
+  top: 84.934%;
+  left: 4.408%;
   width: 44.186%;
-  height: 15.423%;
+  height: 13.636%;
 }
 
 .hotspot--survey {
-  top: 82.987%;
-  left: 51.403%;
+  top: 84.934%;
+  left: 51.384%;
   width: 44.186%;
-  height: 15.423%;
+  height: 13.636%;
 }
 
 .hotspot:focus-visible {
@@ -276,6 +284,15 @@ a {
   letter-spacing: -0.06em;
 }
 
+.menu-dialog--seasonal .menu-toolbar {
+  border-bottom-color: var(--blue);
+}
+
+.menu-dialog--seasonal .menu-toolbar h2 {
+  color: var(--blue);
+  font-size: clamp(19px, 6vw, 27px);
+}
+
 .menu-toolbar__actions {
   display: flex;
   gap: 8px;
@@ -343,6 +360,10 @@ a {
 .noscript-menu a {
   color: var(--black);
   font-weight: 800;
+}
+
+.noscript-menu a + a {
+  margin-left: 16px;
 }
 
 @keyframes menu-enter {

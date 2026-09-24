@@ -9,18 +9,18 @@
       content="ГУСТОЙ — меню, карта лояльности, G-бонусы, отзывы, оплата счёта, чаевые и Telegram-группа."
     />
     <title>ГУСТОЙ</title>
-    <link rel="preload" as="image" type="image/png" href="assets/gustoy-home-2026-v5.png" />
-    <link rel="stylesheet" href="styles.css?v=layout-4" />
+    <link rel="preload" as="image" type="image/png" href="assets/gustoy-home-2026-v6.png" />
+    <link rel="stylesheet" href="styles.css?v=20260924" />
   </head>
   <body>
     <main class="landing" aria-labelledby="page-title">
       <h1 class="visually-hidden" id="page-title">ГУСТОЙ — место хороших ребят</h1>
       <img
         class="design"
-        src="assets/gustoy-home-2026-v5.png"
-        width="11377"
-        height="31909"
-        alt="ГУСТОЙ — меню, карта лояльности, отзывы, оплата счёта, чаевые, Telegram и анкета"
+        src="assets/gustoy-home-2026-v6.png"
+        width="1290"
+        height="4093"
+        alt="ГУСТОЙ — основное и сезонное меню, карта лояльности, отзывы, оплата счёта, чаевые, Telegram и анкета"
         decoding="async"
       />
 
@@ -33,6 +33,14 @@
           aria-label="Открыть меню"
         ></button>
 
+        <button
+          class="hotspot hotspot--seasonal-menu"
+          id="seasonal-menu-open"
+          type="button"
+          aria-haspopup="dialog"
+          aria-label="Открыть сезонное предложение"
+        ></button>
+
         <a
           class="hotspot hotspot--loyalty"
           href="https://xvkq3042.uds.app/c/join?ref=xvkq3042"
@@ -43,7 +51,7 @@
 
         <a
           class="hotspot hotspot--2gis"
-          href="https://2gis.ru/reviews/70000001027295493/addReview?utm_source=lk"
+          href="https://script.google.com/macros/s/AKfycbxvBjxqu_ogivV1IofZFEJoC3DivIA7C601wgMpLQ6WXMsSnpFwrmDjXv1Aj1Iu9yRYvQ/exec?venue=gustoy"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Оставить отзыв в 2ГИС"
@@ -51,7 +59,7 @@
 
         <a
           class="hotspot hotspot--yandex"
-          href="https://yandex.ru/profile/165048607455?intent=reviews"
+          href="https://script.google.com/macros/s/AKfycbyOZW18NKWU2cC0dncPu3vKZGXSKYnDY9d5EtJTxkVakoxZkrouiKzgNjH-c8jDASsN/exec?venue=gustoy"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Оставить отзыв на Яндексе"
@@ -77,7 +85,7 @@
 
         <a
           class="hotspot hotspot--survey"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSeiTU3ouHFEyhRMCRh_cpVpD_Dn5laaLdtFzP8Nx8uni8c1Rw/viewform?pli=1"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdluiobVjQp4-z7L02f8gP-yhy0BBA8sUa_uVPSC_g9CGmSMA/viewform"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Заполнить анкету"
@@ -108,6 +116,37 @@
       </div>
     </dialog>
 
+    <dialog
+      class="menu-dialog menu-dialog--seasonal"
+      id="seasonal-menu-dialog"
+      aria-labelledby="seasonal-menu-title"
+    >
+      <div class="menu-toolbar">
+        <h2 id="seasonal-menu-title">СЕЗОННОЕ МЕНЮ</h2>
+        <div class="menu-toolbar__actions">
+          <a
+            class="menu-pdf-link"
+            href="assets/seasonal-menu/gustoy-seasonal-menu.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >PDF</a>
+          <button
+            class="menu-close"
+            id="seasonal-menu-close"
+            type="button"
+            aria-label="Закрыть сезонное меню"
+          >×</button>
+        </div>
+      </div>
+
+      <div class="menu-pages">
+        <img
+          src="assets/seasonal-menu/page-1.png"
+          alt="Сезонное меню ГУСТОЙ — Из провинций Китая"
+        />
+      </div>
+    </dialog>
+
     <dialog class="tips-dialog" id="tips-dialog" aria-labelledby="tips-dialog-title">
       <div class="tips-dialog__header">
         <div>
@@ -133,10 +172,11 @@
 
     <noscript>
       <p class="noscript-menu">
-        <a href="assets/menu/gustoy-menu.pdf">Открыть меню в PDF</a>
+        <a href="assets/menu/gustoy-menu.pdf">Основное меню в PDF</a>
+        <a href="assets/seasonal-menu/gustoy-seasonal-menu.pdf">Сезонное меню в PDF</a>
       </p>
     </noscript>
 
-    <script src="script.js?v=layout-4"></script>
+    <script src="script.js?v=20260924"></script>
   </body>
 </html>
